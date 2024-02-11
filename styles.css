@@ -332,6 +332,66 @@ footer {
     margin: 0 auto;
 }
 
+/* Products Page */
+#all-products {
+    min-height: 60vh;
+}
+
+.all-products__row {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.products__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.products__header__link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.products__header__link__text {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.products__header__title {
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.products__header__filter {
+  padding: 4px;
+  background-color: #f4f4f4;
+  font-size: 15px;
+  font-weight: 500;
+  color: #292929;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.products__list__spinner{
+  font-size: 40px;
+  margin: 0 auto;
+  animation: loading-spinner 1000ms infinite
+}
+
+@keyframes loading-spinner{
+  0%{
+    rotate: 0deg;
+  }
+
+  100%{
+    rotate: 360deg;
+  }
+}
+
 /* LG Screens - Laptops */
 @media (max-width: 1024px) {
      /* Products */
